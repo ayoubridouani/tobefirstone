@@ -1,12 +1,12 @@
 # Ayoub Ridouani (CoderPyC) 
-# 7200 commits
-for i in {1..7200}
+# 1000 commits
+for i in {1..1000}
 do
 	now=$(date)
 	echo "{'now':'$now'}" > data.json
 	git add data.json
 	git commit -m "$now"
-	echo "$i/7200"
+	echo "$i/1000"
 	sleep 1
 done
 git push origin master
