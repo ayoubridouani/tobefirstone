@@ -1,13 +1,13 @@
 # Ayoub Ridouani (CoderPyC) 
-# 1000 commits
-for i in {1..1000}
+# 500000 commits
+for i in {1..500000}
 do
-	now=$(date)
-	echo "{'now':'$now'}" > data.json
+	now=$(date +%s)
+	echo "{'now':'$i'}" > data.json
 	git add data.json
-	git commit -m "$now"
-	echo "$i/1000"
-	sleep 1
+	git commit -am "$now"
+	echo "$i/500000"
+	sleep 1e-1
 done
 git push origin master
 echo "[OK] you are the first on commits.top in your country..."
